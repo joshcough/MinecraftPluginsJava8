@@ -1,4 +1,4 @@
-package com.joshcough.minecraft.betterjava;
+package com.joshcough.minecraft.fp;
 
 public interface Function0<A> {
   abstract public A apply();

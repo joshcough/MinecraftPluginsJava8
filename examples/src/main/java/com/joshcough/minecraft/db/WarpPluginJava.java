@@ -1,8 +1,8 @@
 package com.joshcough.minecraft.db;
 
 import com.avaje.ebean.EbeanServer;
-import com.joshcough.minecraft.betterjava.*;
-import static com.joshcough.minecraft.betterjava.JavaParsers.*;
+import com.joshcough.minecraft.fp.*;
+import static com.joshcough.minecraft.fp.JavaParsers.*;
 import org.bukkit.entity.Player;
 
 import java.util.List;

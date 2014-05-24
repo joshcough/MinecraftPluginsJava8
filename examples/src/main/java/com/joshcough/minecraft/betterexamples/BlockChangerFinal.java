@@ -10,8 +10,8 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockDamageEvent;
 
-import com.joshcough.minecraft.betterjava.*;
-import static com.joshcough.minecraft.betterjava.JavaParsers.opt;
+import com.joshcough.minecraft.fp.*;
+import static com.joshcough.minecraft.fp.JavaParsers.opt;
 
 public class BlockChangerFinal extends BetterJavaPlugin {
   public final Map<Player, Material> blockChangerUsers = new HashMap<Player, Material>();

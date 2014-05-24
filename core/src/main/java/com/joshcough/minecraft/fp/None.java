@@ -1,4 +1,4 @@
-package com.joshcough.minecraft.betterjava;
+package com.joshcough.minecraft.fp;
 
 public class None<T> extends Option<T> {
   public boolean isDefined() { return false; }

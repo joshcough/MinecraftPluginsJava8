@@ -1,4 +1,4 @@
-package com.joshcough.minecraft.betterjava;
+package com.joshcough.minecraft.fp;
 
 abstract public class Option<T> {
   static public <T> Option<T> apply(T t){

@@ -1,4 +1,4 @@
-package com.joshcough.minecraft.betterjava;
+package com.joshcough.minecraft.fp;
 
 abstract public class Either<T, U> {
   public abstract boolean isLeft();

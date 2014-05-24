@@ -1,10 +1,12 @@
-package com.joshcough.minecraft.betterjava;
+package com.joshcough.minecraft;
+
+import com.joshcough.minecraft.fp.*;
 
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
-public class JavaParsers {
+public class ParserCombinators {
 
   static class ParserMonad {
     public <T> Parser<T> unit(final T t){

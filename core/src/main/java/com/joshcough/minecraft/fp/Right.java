@@ -1,4 +1,4 @@
-package com.joshcough.minecraft.betterjava;
+package com.joshcough.minecraft.fp;
 
 public class Right<T, U> extends Either<T, U> {
   private U u;

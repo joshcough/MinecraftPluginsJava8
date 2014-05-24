@@ -1,6 +1,6 @@
 package com.joshcough.minecraft.betterexamples;
 
-import com.joshcough.minecraft.betterjava.BetterJavaPlugin;
+import com.joshcough.minecraft.fp.BetterJavaPlugin;
 
 import org.bukkit.Material;
 import org.bukkit.block.Block;

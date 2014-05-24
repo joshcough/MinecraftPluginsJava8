@@ -1,4 +1,6 @@
-package com.joshcough.minecraft.betterjava;
+package com.joshcough.minecraft;
+
+import com.joshcough.minecraft.fp.*;
 
 import org.bukkit.*;
 import static org.bukkit.ChatColor.*;
@@ -35,7 +37,7 @@ import java.util.*;
 import java.util.logging.Logger;
 import java.util.stream.*;
 
-import static com.joshcough.minecraft.betterjava.JavaParsers.*;
+import static com.joshcough.minecraft.ParserCombinators.*;
 
 public class BetterJavaPlugin extends JavaPlugin {
   public final Logger logger = Logger.getLogger("Minecraft");
@@ -124,17 +126,14 @@ public class BetterJavaPlugin extends JavaPlugin {
     return s.toString();
   }
 
-  public void writeYML(String author, String version){
-    String ymlContents = this.yml(author, version);
-    writeResourcesFile(this.pluginName().toLowerCase() + ".yml", ymlContents);
-    writeResourcesFile("plugin.yml", ymlContents);
+  public void writeYML(String author, String version, String outputDir){
+    File resources = new File(outputDir);
+    resources.mkdirs();
+    writeFile(new File(resources, "plugin.yml"), yml(author, version));
+   //writeFile(configs.toList.map{ case (k, v) => s"$k: $v" }.mkString("\n"), "config.yml")
+
   }
 
-  private File resources = new java.io.File("./src/main/resources");
-  private void writeResourcesFile(String filename, String contents){
-    resources.mkdir();
-    writeFile(new File(resources, filename), contents);
-  }
   private void writeFile(File f, String contents){
     try {
       FileWriter fw = new FileWriter(f);

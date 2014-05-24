@@ -1,4 +1,6 @@
-package com.joshcough.minecraft.betterjava;
+package com.joshcough.minecraft;
+
+import com.joshcough.minecraft.fp.*;
 
 import org.bukkit.World;
 import org.bukkit.entity.Entity;

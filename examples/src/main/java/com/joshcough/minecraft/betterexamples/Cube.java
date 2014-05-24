@@ -1,6 +1,6 @@
 package com.joshcough.minecraft.betterexamples;
 
-import com.joshcough.minecraft.betterjava.*;
+import com.joshcough.minecraft.fp.*;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.World;
